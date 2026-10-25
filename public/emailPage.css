@@ -1,0 +1,77 @@
+#mailerror {
+    background-color: rgb(203, 65, 65);
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+
+}
+
+#mailsucces {
+    background-color: rgb(50, 108, 18);
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#backbtn {
+    background-color: rgb(43, 135, 234);
+    padding: 20px;
+    margin: 20px;
+    ;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+    transition: 0.3s;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    &:hover {
+        background-color: rgb(45, 112, 194);
+    }
+
+}
+
+body {
+    background-color: rgb(245, 244, 244);
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+#navbar {
+    background-color: rgb(69, 70, 78);
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    color: white;
+    font-size: clamp(12px, 1vw, 16px);
+
+}
+
+#navbar a {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+
+}
+
+#nav-titel {
+    font-size: clamp(18px, 2vw, 30px);
+
+}
+
+
+#nav-active {
+    color: grey !important;
+}
+
+.uitlogknop {
+    color: gold !important;
+    margin-left: auto !important;
+}

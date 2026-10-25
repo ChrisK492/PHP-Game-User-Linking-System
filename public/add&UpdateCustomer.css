@@ -1,0 +1,117 @@
+body {
+    background-color: rgb(245, 244, 244);
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+#navbar {
+    background-color: rgb(69, 70, 78);
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    color: white;
+    font-size: clamp(12px, 1vw, 16px);
+
+}
+
+#navbar a {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+
+}
+
+#nav-titel {
+    font-size: clamp(18px, 2vw, 30px);
+
+}
+
+
+#nav-active {
+    color: grey !important;
+}
+
+#alles-container {
+    padding: 30px;
+}
+
+@media (max-width: 600px) {
+    #alles-container {
+        padding: 10px;
+    }
+
+    #nav-titel{
+        display: none;
+    }
+    
+}
+
+.uitlogknop{
+    color: gold !important;
+    margin-left: auto !important;
+}
+
+.text-input {
+    width: 100%;
+    border: none;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: rgba(100, 100, 111, 0.1) 0px 7px 29px 0px;
+}
+
+.text-input:focus{
+    outline: 3px solid rgb(68, 112, 163);
+}
+
+
+/* net als hamburger menu, dropdown menu standaard niet zichtbaar */
+
+#dropdownMenu{
+    opacity: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    max-height: 0px;
+    list-style: none;
+    transition: 0.4s;
+    pointer-events: none;
+}
+
+#dropdownMenu.visible{
+    opacity: 1;
+    max-height: 500px;
+    pointer-events: all;
+}
+
+#dropdownMenu li{
+    /* lage z index, zodat hij nergens boven komt terwijl hij onzichtbaar is */
+    z-index: 0;
+    transform: translateY(-5px);
+    padding: 20px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.306);
+
+    &:hover {
+        background-color: rgb(237, 237, 237);
+    }
+}
+
+#opslaanknop{
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5PX;
+    border: 0px;
+    font-size: 20px;
+    padding: 15px;
+    color: white;
+    background-color: rgb(40, 118, 213);
+
+}
+
+#error{
+    color: red;
+    font-weight: 600;
+}

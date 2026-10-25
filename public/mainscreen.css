@@ -1,0 +1,159 @@
+/* mainscreen */
+body {
+    background-color: rgb(231, 229, 229);
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+
+#navbar {
+    background-color: rgb(69, 70, 78);
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    color: white;
+    font-size: clamp(12px, 1vw, 16px);
+
+}
+
+#navbar a {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+
+}
+
+#nav-titel {
+    font-size: clamp(18px, 2vw, 30px);
+
+}
+
+
+#nav-active {
+    color: grey !important;
+}
+
+#alles-container {
+    padding: 30px;
+}
+
+/* bij kleine schermen kleine padding*/
+
+@media (max-width: 600px) {
+    #alles-container {
+        padding: 10px;
+    }
+
+    #nav-titel {
+        display: none;
+    }
+
+}
+
+#table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.uitlogknop {
+    color: gold !important;
+    margin-left: auto !important;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#thead {
+    background-color: rgb(41, 41, 41);
+    height: 50px;
+    color: white;
+}
+
+.td {
+    height: 50px;
+    background-color: rgb(229, 229, 229);
+    padding: 10px;
+    text-align: center;
+}
+
+#toevoeg-button {
+    display: block;
+    margin-left: auto;
+    margin-bottom: 10px;
+    width: fit-content;
+    padding: 10px;
+    background-color: rgb(44, 111, 219);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.muisover-knop {
+    background-color: rgb(222, 167, 1);
+    padding: 10px;
+    color: white;
+    border: 0px;
+    cursor: pointer;
+
+}
+
+
+
+.vakje {
+    display: none;
+    position: absolute;
+    right: 0;
+    width: 200px;
+    background-color: rgb(241, 241, 241);
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 999;
+}
+
+
+.wijzig-knop {
+    background-color: grey;
+    padding: 10px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.verwijder-knop {
+    background-color: red;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+
+}
+
+.koppel-knop {
+    background-color: rgb(0, 132, 255);
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.email-knop {
+    background-color: rgb(233, 194, 0);
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
